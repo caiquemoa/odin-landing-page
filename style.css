@@ -1,26 +1,25 @@
-html,
-body {
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
-	height: 100vh;
 }
+
+html,
 body {
-	/* background-image: url('./images/christmas.png');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat; */
+	font-family: 'Roboto', sans-serif;
+}
+
+main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-color: #1f2937;
 }
-
 .header {
 	display: flex;
 	justify-content: space-between;
-	padding: 1.5rem 1.5rem;
+	align-items: center;
+	padding: 1.5rem 0;
 	color: #f9faf8;
 	font-weight: bold;
 	width: 100%;
@@ -38,4 +37,66 @@ body {
 	color: #e5e7eb;
 	justify-content: space-between;
 	gap: 0.75rem;
+}
+.header > nav > ul > li > a {
+	text-decoration: none;
+	color: inherit;
+	background: linear-gradient(to right, #e5e7eb, #e5e7eb),
+		linear-gradient(to right, #5f9dff, #2579ff, #2974ec);
+	background-size: 100% 3px, 0 3px;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 400ms;
+}
+.header > nav > ul > li > a:hover {
+	background-size: 0 3px, 100% 3px;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 60rem;
+	height: 500px;
+}
+
+.hero > div {
+	flex: 1;
+}
+
+.hero > div > h1 {
+	color: #f9faf8;
+	font-weight: 800;
+	font-size: 3rem;
+	justify-content: space-between;
+}
+
+.hero > div > p {
+	color: #e5e7eb;
+	font-size: 1.125rem;
+}
+
+.image {
+	flex: 2;
+	max-height: 15rem;
+	object-fit: cover;
+}
+
+.button {
+	padding: 10px 30px;
+	font-size: 1rem;
+	border-radius: 10px;
+	background-color: #3882f6;
+	color: #f9faf8;
+	font-weight: bold;
+}
+
+.button:active {
+	transform: scale(1.07);
+	transition: 300ms;
+	border: none;
+}
+
+.-border {
+	border: 2px solid #f9faf8;
 }
