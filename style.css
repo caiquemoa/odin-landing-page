@@ -89,7 +89,7 @@ main {
 
 /* Button */
 .button {
-	padding: 10px 30px;
+	padding: 10px 2.5rem;
 	font-size: 1rem;
 	border-radius: 10px;
 	background-color: #3882f6;
@@ -139,7 +139,7 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 3rem;
-	gap: 2rem;
+	justify-content: space-between;
 }
 
 .cards {
@@ -172,7 +172,7 @@ main {
 	font-weight: normal;
 	max-width: 150px;
 }
-
+/* Quotation Section */
 .quote-section {
 	width: 100%;
 	padding: 80px 0;
@@ -195,4 +195,38 @@ main {
 	font-size: 1.5rem;
 	font-weight: 800;
 	padding-right: 1rem;
+}
+/* Call to Action Section */
+.call-to-action {
+	display: flex;
+	padding: 100px 150px;
+	width: 100%;
+
+	background-color: #fff;
+}
+
+.call-to-action > div {
+	display: flex;
+	justify-content: space-around;
+	padding: 60px 0;
+	width: 100%;
+	border-radius: 8px;
+	max-width: 60rem;
+	background: #3882f6;
+}
+
+.call-to-action h1 {
+	color: #f9faf8;
+}
+
+.call-to-action p {
+	color: #e5e7eb;
+}
+/* Footer */
+footer {
+	background-color: #1f2937;
+	color: #e5e7eb;
+	width: 100%;
+	text-align: center;
+	padding: 3.75rem;
 }
