@@ -15,11 +15,13 @@ main {
 	align-items: center;
 	background-color: #1f2937;
 }
+/* Header */
+
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1.5rem 0;
+	padding: 1.5rem 20px;
 	color: #f9faf8;
 	font-weight: bold;
 	width: 100%;
@@ -27,18 +29,19 @@ main {
 }
 
 .logo {
+	color: #3882f6;
 	font-size: 2rem;
 	line-height: 3.4375rem;
 }
 
-.header > nav > ul {
+.header ul {
 	display: flex;
 	list-style: none;
 	color: #e5e7eb;
 	justify-content: space-between;
 	gap: 0.75rem;
 }
-.header > nav > ul > li > a {
+.header li > a {
 	text-decoration: none;
 	color: inherit;
 	background: linear-gradient(to right, #e5e7eb, #e5e7eb),
@@ -48,16 +51,18 @@ main {
 	background-repeat: no-repeat;
 	transition: background-size 400ms;
 }
-.header > nav > ul > li > a:hover {
+.header li > a:hover {
 	background-size: 0 3px, 100% 3px;
 }
 
+/* Hero banner */
 .hero {
 	display: flex;
 	align-items: center;
 	width: 100%;
 	max-width: 60rem;
 	height: 500px;
+	padding: 0 1.25rem;
 }
 
 .hero > div {
@@ -82,6 +87,7 @@ main {
 	object-fit: cover;
 }
 
+/* Button */
 .button {
 	padding: 10px 30px;
 	font-size: 1rem;
@@ -89,14 +95,75 @@ main {
 	background-color: #3882f6;
 	color: #f9faf8;
 	font-weight: bold;
+	cursor: pointer;
+	border: none;
 }
 
 .button:active {
-	transform: scale(1.07);
+	transform: scale(1.05);
 	transition: 300ms;
-	border: none;
 }
 
 .-border {
 	border: 2px solid #f9faf8;
+}
+
+/* Information Section */
+.information {
+	background-color: #e9e9e9;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 30px 0 100px 0;
+}
+.information > div {
+	max-width: 50rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+.information h1 {
+	color: #1f2937;
+	font-size: 2.25rem;
+	font-weight: 800;
+}
+
+.information nav {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 3rem;
+	gap: 2rem;
+}
+
+.cards {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	text-align: center;
+	flex: 1;
+}
+.cards > img {
+	width: 150px;
+	height: 100px;
+	padding: 4px;
+	aspect-ratio: auto 150 / 100;
+	border: 3px solid #cddffc;
+	border-radius: 8px;
+	border-bottom: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.cards > p {
+	padding-top: 0.25rem;
+	color: #8b8993;
+	font-weight: normal;
+	max-width: 150px;
+	border: 3px solid #cddffc;
+	border-radius: 8px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-top: none;
 }
