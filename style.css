@@ -147,18 +147,23 @@ main {
 	flex-flow: column wrap;
 	align-items: center;
 	text-align: center;
+	cursor: pointer;
 	flex: 1;
+	border: 3px solid transparent;
+	border-radius: 8px;
+	transition: 400ms;
+	padding: 10px;
 }
+
+.cards:hover {
+	border-color: #3882f6;
+}
+
 .cards > img {
 	width: 150px;
 	height: 100px;
 	padding: 4px;
 	aspect-ratio: auto 150 / 100;
-	border: 3px solid #cddffc;
-	border-radius: 8px;
-	border-bottom: none;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
 }
 
 .cards > p {
@@ -166,11 +171,6 @@ main {
 	color: #8b8993;
 	font-weight: normal;
 	max-width: 150px;
-	border: 3px solid #cddffc;
-	border-radius: 8px;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	border-top: none;
 }
 
 .quote-section {
