@@ -44,7 +44,7 @@ main {
 .header li > a {
 	text-decoration: none;
 	color: inherit;
-	background: linear-gradient(to right, #e5e7eb, #e5e7eb),
+	background: linear-gradient(to right, transparent, transparent),
 		linear-gradient(to right, #5f9dff, #2579ff, #2974ec);
 	background-size: 100% 3px, 0 3px;
 	background-position: 100% 100%, 0 100%;
@@ -97,11 +97,16 @@ main {
 	font-weight: bold;
 	cursor: pointer;
 	border: none;
+	transition: ease-in 100ms;
+}
+
+.button:hover {
+	opacity: 0.9;
 }
 
 .button:active {
 	transform: scale(1.05);
-	transition: 300ms;
+	transition: 200ms;
 }
 
 .-border {
@@ -110,7 +115,7 @@ main {
 
 /* Information Section */
 .information {
-	background-color: #e9e9e9;
+	background-color: #fff;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -166,4 +171,28 @@ main {
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	border-top: none;
+}
+
+.quote-section {
+	width: 100%;
+	padding: 80px 0;
+	background-color: #e5e7eb;
+}
+
+.quote-section figure {
+	max-width: 50rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.quote-section blockquote {
+	font-size: 2.25rem;
+	font-weight: lighter;
+}
+.quote-section figcaption {
+	align-self: flex-end;
+	font-size: 1.5rem;
+	font-weight: 800;
+	padding-right: 1rem;
 }
