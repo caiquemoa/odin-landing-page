@@ -201,7 +201,7 @@ main {
 	display: flex;
 	padding: 100px 150px;
 	width: 100%;
-
+	justify-content: center;
 	background-color: #fff;
 }
 
